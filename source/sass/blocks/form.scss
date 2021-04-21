@@ -45,7 +45,7 @@
   }
 
   &:focus {
-    border-color: transparent;
+    // border-color: transparent;
     box-shadow: -6px -6px 10px rgba($white, 1),
       inset 6px 6px 10px rgba($dark, 0.1), inset -6px -6px 10px rgba($white, 1),
       6px 6px 10px rgba($dark, 0.1);
@@ -84,6 +84,13 @@
     background-color: rgba($accent, 0.1);
     transition: 0.3s ease;
   }
+
+  @media (max-width: 1023px) {
+    &:active {
+      background-color: rgba($accent, 0.4);
+      transition: 0.3s ease;
+    }
+  }
 }
 .form__submit {
   display: block;
@@ -102,5 +109,12 @@
   &:active {
     background-color: rgba($accent, 0.1);
     transition: 0.3s ease;
+  }
+
+  @media (max-width: 1023px) {
+    &:active {
+      background-color: rgba($accent, 0.4);
+      transition: 0.3s ease;
+    }
   }
 }
