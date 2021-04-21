@@ -1,0 +1,53 @@
+.login {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+  }
+}
+
+.login__overlay {
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: -200px;
+    width: 400px;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 767px) {
+    top: 0;
+    left: 0;
+    right: unset;
+    transform: unset;
+    width: 100%;
+    max-width: unset;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($white, 0.3);
+  }
+}
+
+.login__form {
+  box-shadow: 5px 5px 10px 5px rgba($black, 0.2);
+
+  @media (max-width: 1023px) {
+  }
+
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,106 @@
+.form {
+  background-color: $light;
+}
+
+.form__title {
+  @include font(2rem, 3rem, 700);
+  margin: 0;
+  padding: 35px 25px 25px;
+  background-color: $accent;
+  color: $white;
+  box-shadow: inset 0 15px 0 0 rgba($black, 0.2), 0 5px 5px 0 rgba($black, 0.2);
+}
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-bottom: 1px solid $grey;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__item input {
+  @include font(1.6rem, 2rem, 400);
+  outline: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid $accent;
+  background-color: transparent;
+  width: 100%;
+  color: $accent;
+
+  &::placeholder {
+    color: rgba($accent, 0.7);
+  }
+
+  &:hover {
+    background-color: rgba($white, 0.5);
+    transition: all 0.3 ease-in-out;
+  }
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: -6px -6px 10px rgba($white, 1),
+      inset 6px 6px 10px rgba($dark, 0.1), inset -6px -6px 10px rgba($white, 1),
+      6px 6px 10px rgba($dark, 0.1);
+    transition: all 0.3 ease-in-out;
+  }
+}
+
+.form__eye {
+  // кнопка-глаз
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/icon-opened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px auto;
+  width: 50px;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+
+  &--visible {
+    background-image: url("../../img/icon-closed.svg");
+  }
+
+  &:hover {
+    background-color: rgba($accent, 0.4);
+    transition: all 0.3 ease-in-out;
+  }
+
+  &:active {
+    background-color: rgba($accent, 0.1);
+    transition: all 0.3 ease-in-out;
+  }
+}
+.form__submit {
+  display: block;
+  margin: 0 0 0 auto;
+  padding: 20px 25px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($accent, 0.4);
+    transition: all 0.3 ease-in-out;
+  }
+
+  &:active {
+    background-color: rgba($accent, 0.1);
+    transition: all 0.3 ease-in-out;
+  }
+}
