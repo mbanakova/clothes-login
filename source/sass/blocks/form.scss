@@ -41,7 +41,7 @@
 
   &:hover {
     background-color: rgba($white, 0.5);
-    transition: all 0.3 ease-in-out;
+    transition: 0.3s ease;
   }
 
   &:focus {
@@ -62,7 +62,7 @@
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
-  background-image: url("../../img/icon-opened.svg");
+  background-image: url("../img/icon-opened.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px auto;
@@ -72,17 +72,17 @@
   cursor: pointer;
 
   &--visible {
-    background-image: url("../../img/icon-closed.svg");
+    background-image: url("../img/icon-closed.svg");
   }
 
   &:hover {
     background-color: rgba($accent, 0.4);
-    transition: all 0.3 ease-in-out;
+    transition: 0.3s ease;
   }
 
   &:active {
     background-color: rgba($accent, 0.1);
-    transition: all 0.3 ease-in-out;
+    transition: 0.3s ease;
   }
 }
 .form__submit {
@@ -96,11 +96,11 @@
 
   &:hover {
     background-color: rgba($accent, 0.4);
-    transition: all 0.3 ease-in-out;
+    transition: 0.3s ease;
   }
 
   &:active {
     background-color: rgba($accent, 0.1);
-    transition: all 0.3 ease-in-out;
+    transition: 0.3s ease;
   }
 }
