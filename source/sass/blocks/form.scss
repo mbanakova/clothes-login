@@ -65,7 +65,7 @@
   background-image: url("../img/icon-opened.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 30px auto;
+  background-size: 20px auto;
   width: 50px;
   height: 100%;
   padding: 0;
@@ -100,10 +100,22 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
 
-  &:hover {
-    background-color: rgba($accent, 0.4);
-    transition: 0.3s ease;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: radial-gradient($accent, rgba($accent, 0.2));
+  }
+
+  &:hover::after {
+    width: calc(100% - 40px);
+    transition: 0.3s;
   }
 
   &:active {

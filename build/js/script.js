@@ -15,9 +15,11 @@
     }
   }
 
-  eye.addEventListener("click", event => {
-    event.preventDefault();
-    toggleEye();
-  });
+  if (eye) {
+    eye.addEventListener("click", event => {
+      event.preventDefault();
+      toggleEye();
+    });
+  }
 })();
 //# sourceMappingURL=script.js.map
