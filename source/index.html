@@ -17,11 +17,10 @@
       as="font"
       crossorigin
     />
-    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> Добавить фавиконку -->
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Henderson test</title>
   </head>
-  <body class="body">
+  <body>
     <h1 class="visually-hidden">New website</h1>
     <div class="wrapper">
       <section class="login">
@@ -52,9 +51,11 @@
                   maxlength="16"
                   placeholder="Пароль"
                   autocomplete="current-password"
+                  title="Допустимая длина - от 6 до 16 символов"
                   required
                 />
                 <label class="visually-hidden" for="password">Пароль</label>
+                <!-- если глаз не нравится - его можно удалить, он ничего не сломает -->
                 <button
                   class="form__eye"
                   type="button"
@@ -68,6 +69,7 @@
       </section>
       <div class="wrapper__img"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/inputmask.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "name": "gulp-scss",
   "private": true,
-  "description": "Архив сборки для быстрого старта",
+  "description": "Тестовое Henderson",
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
@@ -24,6 +24,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "imagemin-jpegtran": "^7.0.0",
+    "inputmask": "^5.0.5",
     "node-sass": "^4.14.1",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"

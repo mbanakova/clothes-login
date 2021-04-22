@@ -45,11 +45,16 @@
   }
 
   &:focus {
-    // border-color: transparent;
-    box-shadow: -6px -6px 10px rgba($white, 1),
-      inset 6px 6px 10px rgba($dark, 0.1), inset -6px -6px 10px rgba($white, 1),
-      6px 6px 10px rgba($dark, 0.1);
+    border: 1px solid rgba($accent, 0.4);
+    border-bottom-color: $accent;
     transition: all 0.3 ease-in-out;
+  }
+
+  @media (max-width: 1023px) {
+    &:hover {
+      background-color: transparent;
+      transition: 0.3s ease;
+    }
   }
 }
 
@@ -86,6 +91,11 @@
   }
 
   @media (max-width: 1023px) {
+    &:hover {
+      background-color: transparent;
+      transition: 0.3s ease;
+    }
+
     &:active {
       background-color: rgba($accent, 0.4);
       transition: 0.3s ease;
@@ -124,9 +134,18 @@
   }
 
   @media (max-width: 1023px) {
+    &:hover::after {
+      width: 0;
+      transition: 0.3s;
+    }
+
     &:active {
       background-color: rgba($accent, 0.4);
       transition: 0.3s ease;
+      &::after {
+        width: calc(100% - 40px);
+        transition: 0.3s;
+      }
     }
   }
 }
